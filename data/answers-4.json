@@ -1,0 +1,478 @@
+{
+  "data": [
+    {
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "question": "What is header two?",
+              "id": 624487,
+              "answers": [
+                {
+                  "answer_id": 675652,
+                  "document_id": 1297270,
+                  "question_id": 624487,
+                  "text": "What is copyleft.org?",
+                  "answer_start": 1042,
+                  "answer_end": 1063,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is header four?",
+              "id": 624489,
+              "answers": [
+                {
+                  "answer_id": 675654,
+                  "document_id": 1297270,
+                  "question_id": 624489,
+                  "text": "\nWho Contributes to copyleft.org?",
+                  "answer_start": 2486,
+                  "answer_end": 2519,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is header three?",
+              "id": 624488,
+              "answers": [
+                {
+                  "answer_id": 675653,
+                  "document_id": 1297270,
+                  "question_id": 624488,
+                  "text": "The Copyleft Guide and Tutorial",
+                  "answer_start": 1355,
+                  "answer_end": 1386,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is header five?",
+              "id": 624560,
+              "answers": [
+                {
+                  "answer_id": 675722,
+                  "document_id": 1297270,
+                  "question_id": 624560,
+                  "text": "Who Contributes to copyleft.org?",
+                  "answer_start": 2487,
+                  "answer_end": 2519,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is header six?",
+              "id": 624561,
+              "answers": [
+                {
+                  "answer_id": 675723,
+                  "document_id": 1297270,
+                  "question_id": 624561,
+                  "text": "\nURLs You Can Memorize!",
+                  "answer_start": 3258,
+                  "answer_end": 3281,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is paragraph eight?",
+              "id": 624569,
+              "answers": [
+                {
+                  "answer_id": 675731,
+                  "document_id": 1297270,
+                  "question_id": 624569,
+                  "text": "The Wikipedia entry on copyleft (The definition of copyleft at the top of this page is a modified version of the first paragraph of that Wikipedia entry).",
+                  "answer_start": 4358,
+                  "answer_end": 4512,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is paragraph one?",
+              "id": 624490,
+              "answers": [
+                {
+                  "answer_id": 675655,
+                  "document_id": 1297270,
+                  "question_id": 624490,
+                  "text": "Copyleft is a strategy of utilizing copyright law and licensing to pursue the policy goal of fostering and encouraging the equal and inalienable right to copy, share, modify and improve creative works of authorship. Copyleft (as a general term) describes any method that utilizes the copyright system (in whole or in part) to achieve the aforementioned goal. Copyleft as a concept is usually implemented in the details of a specific license, such as the General Public License (GPL) and copyleft-next. Authors of creative works can unilaterally choose these licenses for their own works to build communities that collaboratively share and improve those copylefted creative works. Copyleft licenses require that downstream recipients of the creative works receive the means and methods to usefully modify and improve those works of authorship. For software copyleft licenses, users receive the “complete, corresponding source” code for the software — allowing those users to conveniently modify and reinstall that software.",
+                  "answer_start": 18,
+                  "answer_end": 1040,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is header seven?",
+              "id": 624562,
+              "answers": [
+                {
+                  "answer_id": 675724,
+                  "document_id": 1297270,
+                  "question_id": 624562,
+                  "text": "copyleft.org points to this page.",
+                  "answer_start": 3627,
+                  "answer_end": 3660,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is header nine?",
+              "id": 624570,
+              "answers": [
+                {
+                  "answer_id": 675732,
+                  "document_id": 1297270,
+                  "question_id": 624570,
+                  "text": "Getting Involved",
+                  "answer_start": 1742,
+                  "answer_end": 1758,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Read first header",
+              "id": 624738,
+              "answers": [
+                {
+                  "answer_id": 675933,
+                  "document_id": 1297270,
+                  "question_id": 624738,
+                  "text": "What is copyleft?",
+                  "answer_start": 0,
+                  "answer_end": 17,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "what is paragraph two?",
+              "id": 624492,
+              "answers": [
+                {
+                  "answer_id": 675657,
+                  "document_id": 1297270,
+                  "question_id": 624492,
+                  "text": "copyleft.org is a collaborative project to create and disseminate useful information, tutorial material, and new policy ideas regarding all forms of copyleft licensing. This site itself is licensed under a free and open license and has received contributions from experts around the world.",
+                  "answer_start": 1064,
+                  "answer_end": 1353,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Read the first header?",
+              "id": 624491,
+              "answers": [
+                {
+                  "answer_id": 675656,
+                  "document_id": 1297270,
+                  "question_id": 624491,
+                  "text": "What is copyleft?",
+                  "answer_start": 0,
+                  "answer_end": 17,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is paragraph three?",
+              "id": 624563,
+              "answers": [
+                {
+                  "answer_id": 675725,
+                  "document_id": 1297270,
+                  "question_id": 624563,
+                  "text": "The primary project currently on this site is a tutorial book entitled [copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide]. This guide describes the policy motivations for copyleft, presents a detailed analysis of the text of various copyleft licenses, and gives examples and case studies of copyleft compliance situations.",
+                  "answer_start": 1387,
+                  "answer_end": 1740,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the site project?",
+              "id": 624714,
+              "answers": [
+                {
+                  "answer_id": 675909,
+                  "document_id": 1297270,
+                  "question_id": 624714,
+                  "text": "copyleft.org has many easy-to-remember URLs",
+                  "answer_start": 3282,
+                  "answer_end": 3325,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Is the guide very large?",
+              "id": 624739,
+              "answers": [
+                {
+                  "answer_id": 675934,
+                  "document_id": 1297270,
+                  "question_id": 624739,
+                  "text": "ince the guide is very large",
+                  "answer_start": 3482,
+                  "answer_end": 3510,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is paragraph five?",
+              "id": 624566,
+              "answers": [
+                {
+                  "answer_id": 675728,
+                  "document_id": 1297270,
+                  "question_id": 624566,
+                  "text": "This site is a project of Software Freedom Conservancy. The editor-in-chief of the guide is Bradley M. Kuhn. You can see the Git commit log on the tutorial to see who has contributed to it, and see the list of users who contribute to this Wiki. Each contributors' work is their own, and thus the opinions expressed in their contributions, IRC utterances, commit messages mailing list posts, and/or other fora provided by copyleft.org may not necessarily reflect the views of the contributors' employers and/or organizations sponsoring the project and/or organizations republishing copyleft.org's materials. Generally speaking, unless stated otherwise, please assume that individuals contribute to copyleft.org in their personal capacity.",
+                  "answer_start": 2520,
+                  "answer_end": 3257,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "what is the subject?",
+              "id": 624519,
+              "answers": [
+                {
+                  "answer_id": 675684,
+                  "document_id": 1297270,
+                  "question_id": 624519,
+                  "text": "copyleft",
+                  "answer_start": 8,
+                  "answer_end": 16,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is paragraph four?",
+              "id": 624565,
+              "answers": [
+                {
+                  "answer_id": 675727,
+                  "document_id": 1297270,
+                  "question_id": 624565,
+                  "text": "There are various ways to get involved with this project. The primary copyleft.org website is a wiki, and we welcome helpful edits and additions. For the aforementioned guide and tutorial about GPL and other copyleft concepts, we seek help in the following ways:\n\nProposing Improvements to the Guide Pull requests on copyleft.org's Kallithea site are most welcome. If you're looking for something to fix, just grep the *.tex files for \"FIXME\" and you'll find plenty. Many of them are simple and easy to do. Some of them are writing, and some of them are formatting-related.\n\nJoining Mailing Lists * Subscribe to our low-traffic announcements-only mailing list. * Join discussion on our primary mailing list, called \"discuss\".",
+                  "answer_start": 1760,
+                  "answer_end": 2485,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is offsite resource?",
+              "id": 624716,
+              "answers": [
+                {
+                  "answer_id": 675911,
+                  "document_id": 1297270,
+                  "question_id": 624716,
+                  "text": "Offsite Resources",
+                  "answer_start": 4340,
+                  "answer_end": 4357,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is copyleft.org?",
+              "id": 624735,
+              "answers": [
+                {
+                  "answer_id": 675930,
+                  "document_id": 1297270,
+                  "question_id": 624735,
+                  "text": "copyleft.org is a collaborative project to create and disseminate useful information, tutorial material, and new policy ideas regarding all forms of copyleft licensing. This site itself is licensed under a free and open license and has received contributions from experts around the world.",
+                  "answer_start": 1064,
+                  "answer_end": 1353,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How can i getting involved?",
+              "id": 624741,
+              "answers": [
+                {
+                  "answer_id": 675936,
+                  "document_id": 1297270,
+                  "question_id": 624741,
+                  "text": "There are various ways to get involved with this project. The primary copyleft.org website is a wiki, and we welcome helpful edits and additions. For the aforementioned guide and tutorial about GPL and other copyleft concepts, we seek help in the following ways:",
+                  "answer_start": 1760,
+                  "answer_end": 2022,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is paragraph six?",
+              "id": 624567,
+              "answers": [
+                {
+                  "answer_id": 675729,
+                  "document_id": 1297270,
+                  "question_id": 624567,
+                  "text": "copyleft.org has many easy-to-remember URLs. These are convenience URLs that you can memorize and give to people verbally to point them to the right part of The Guide (https://copyleft.org/guide/). (Since the guide is very large, we thought a few easy-to-remember ways to tell people where to look would be helpful.) Here are the primary ones:",
+                  "answer_start": 3282,
+                  "answer_end": 3625,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Is header one available?",
+              "id": 624743,
+              "answers": [
+                {
+                  "answer_id": 675938,
+                  "document_id": 1297270,
+                  "question_id": 624743,
+                  "text": "What is copyleft?",
+                  "answer_start": 0,
+                  "answer_end": 17,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is paragraph seven?",
+              "id": 624568,
+              "answers": [
+                {
+                  "answer_id": 675730,
+                  "document_id": 1297270,
+                  "question_id": 624568,
+                  "text": "copyleft.guide points to the guide itself.\ncompliance.guide points to the GPL Compliance Guide section of the full Guide.\ngpl.guide points to the Detailed Analysis of the GNU GPL and Related Licenses section of the full Guide.\nAs time goes on, we'll add convenience URLs to refer to specific parts of the guide, which makes it easy to refer people to portions of the Guide. Here are the ones that exist so far: * compliance.guide/pristine points to the \"pristine example\", the chapter entitled ThinkPenguin Wireless Router: Excellent CCS. * compliance.guide/offer-for-source points to the section regarding using the offer for source provisions in GPLv3§6(c) and/or GPLv2§3(b).",
+                  "answer_start": 3661,
+                  "answer_end": 4338,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What are first header?",
+              "id": 624737,
+              "answers": [
+                {
+                  "answer_id": 675932,
+                  "document_id": 1297270,
+                  "question_id": 624737,
+                  "text": "What is copyleft?",
+                  "answer_start": 0,
+                  "answer_end": 17,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Is header one?",
+              "id": 624745,
+              "answers": [
+                {
+                  "answer_id": 675940,
+                  "document_id": 1297270,
+                  "question_id": 624745,
+                  "text": "What is copyleft?",
+                  "answer_start": 0,
+                  "answer_end": 17,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Are there easy to remember URLs?",
+              "id": 624731,
+              "answers": [
+                {
+                  "answer_id": 675926,
+                  "document_id": 1297270,
+                  "question_id": 624731,
+                  "text": "What is copyleft?\nCopyleft is a ",
+                  "answer_start": 0,
+                  "answer_end": 32,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is header one?",
+              "id": 624486,
+              "answers": [
+                {
+                  "answer_id": 675651,
+                  "document_id": 1297270,
+                  "question_id": 624486,
+                  "text": "What is copyleft?",
+                  "answer_start": 0,
+                  "answer_end": 17,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How can I contributes to copyleft.org?",
+              "id": 624742,
+              "answers": [
+                {
+                  "answer_id": 675937,
+                  "document_id": 1297270,
+                  "question_id": 624742,
+                  "text": "This site is a project of Software Freedom Conservancy.",
+                  "answer_start": 2520,
+                  "answer_end": 2575,
+                  "answer_category": null
+                }
+              ],
+              "is_impossible": false
+            }
+          ],
+          "context": "What is copyleft?\nCopyleft is a strategy of utilizing copyright law and licensing to pursue the policy goal of fostering and encouraging the equal and inalienable right to copy, share, modify and improve creative works of authorship. Copyleft (as a general term) describes any method that utilizes the copyright system (in whole or in part) to achieve the aforementioned goal. Copyleft as a concept is usually implemented in the details of a specific license, such as the General Public License (GPL) and copyleft-next. Authors of creative works can unilaterally choose these licenses for their own works to build communities that collaboratively share and improve those copylefted creative works. Copyleft licenses require that downstream recipients of the creative works receive the means and methods to usefully modify and improve those works of authorship. For software copyleft licenses, users receive the “complete, corresponding source” code for the software — allowing those users to conveniently modify and reinstall that software.\n\nWhat is copyleft.org?\ncopyleft.org is a collaborative project to create and disseminate useful information, tutorial material, and new policy ideas regarding all forms of copyleft licensing. This site itself is licensed under a free and open license and has received contributions from experts around the world.\n\nThe Copyleft Guide and Tutorial\nThe primary project currently on this site is a tutorial book entitled [copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide]. This guide describes the policy motivations for copyleft, presents a detailed analysis of the text of various copyleft licenses, and gives examples and case studies of copyleft compliance situations.\n\nGetting Involved\n\nThere are various ways to get involved with this project. The primary copyleft.org website is a wiki, and we welcome helpful edits and additions. For the aforementioned guide and tutorial about GPL and other copyleft concepts, we seek help in the following ways:\n\nProposing Improvements to the Guide Pull requests on copyleft.org's Kallithea site are most welcome. If you're looking for something to fix, just grep the *.tex files for \"FIXME\" and you'll find plenty. Many of them are simple and easy to do. Some of them are writing, and some of them are formatting-related.\n\nJoining Mailing Lists * Subscribe to our low-traffic announcements-only mailing list. * Join discussion on our primary mailing list, called \"discuss\".\n\nWho Contributes to copyleft.org?\nThis site is a project of Software Freedom Conservancy. The editor-in-chief of the guide is Bradley M. Kuhn. You can see the Git commit log on the tutorial to see who has contributed to it, and see the list of users who contribute to this Wiki. Each contributors' work is their own, and thus the opinions expressed in their contributions, IRC utterances, commit messages mailing list posts, and/or other fora provided by copyleft.org may not necessarily reflect the views of the contributors' employers and/or organizations sponsoring the project and/or organizations republishing copyleft.org's materials. Generally speaking, unless stated otherwise, please assume that individuals contribute to copyleft.org in their personal capacity.\n\nURLs You Can Memorize!\ncopyleft.org has many easy-to-remember URLs. These are convenience URLs that you can memorize and give to people verbally to point them to the right part of The Guide (https://copyleft.org/guide/). (Since the guide is very large, we thought a few easy-to-remember ways to tell people where to look would be helpful.) Here are the primary ones:\n\ncopyleft.org points to this page.\ncopyleft.guide points to the guide itself.\ncompliance.guide points to the GPL Compliance Guide section of the full Guide.\ngpl.guide points to the Detailed Analysis of the GNU GPL and Related Licenses section of the full Guide.\nAs time goes on, we'll add convenience URLs to refer to specific parts of the guide, which makes it easy to refer people to portions of the Guide. Here are the ones that exist so far: * compliance.guide/pristine points to the \"pristine example\", the chapter entitled ThinkPenguin Wireless Router: Excellent CCS. * compliance.guide/offer-for-source points to the section regarding using the offer for source provisions in GPLv3§6(c) and/or GPLv2§3(b).\n\nOffsite Resources\nThe Wikipedia entry on copyleft (The definition of copyleft at the top of this page is a modified version of the first paragraph of that Wikipedia entry).",
+          "document_id": 1297270
+        }
+      ]
+    }
+  ]
+}

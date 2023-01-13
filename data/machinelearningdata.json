@@ -1,0 +1,78 @@
+{
+    "data": [
+      {
+        "paragraphs": [
+          {
+            "qas": [
+              {
+                "question": "what is the title",
+                "id": "852989",
+                "answers": [
+                  {
+                    "answer_id": "652891",
+                    "document_id": "622328",
+                    "question_id": "178881",
+                    "text": "copyleft",
+                    "answer_start": 0,
+                    "answer_end": "8",
+                    "answer_category": "0"
+                  }
+                ],
+                "is_impossible": "False"
+              },
+              {
+                "question": "read paragraph 0",
+                "id": "274245",
+                "answers": [
+                  {
+                    "answer_id": "42958",
+                    "document_id": "864748",
+                    "question_id": "585213",
+                    "text": "Copyleft is a strategy of utilizing copyright law and licensing to pursue the policy goal of fostering and encouraging the equal and inalienable right to copy, share, modify and improve creative works of authorship.  Copyleft (as a general term) describes any method that utilizes the copyright system (in whole or in part) to achieve the aforementioned goal.  Copyleft as a concept is usually implemented in the details of a specific license, such as the General Public License (GPL) and copyleft-next. Authors of creative works can unilaterally choose these licenses for their own works to build communities that collaboratively share and improve those copylefted creative works.  Copyleft licenses require that downstream recipients of the creative works receive the means and methods to usefully modify and improve those works of authorship.  For software copyleft licenses, users receive the \\u00e2\\u0080\\u009ccomplete, corresponding source\\u00e2\\u0080\\u009d code for the software \\u00e2\\u0080\\u0094 allowing those users to conveniently modify and reinstall that software.",
+                    "answer_start": 0,
+                    "answer_end": "1032",
+                    "answer_category": "0"
+                  }
+                ],
+                "is_impossible": "False"
+              },
+              {
+                "question": "read paragraph 1",
+                "id": "860395",
+                "answers": [
+                  {
+                    "answer_id": "78196",
+                    "document_id": "929682",
+                    "question_id": "907599",
+                    "text": "copyleft.org is a collaborative project to create and disseminate useful information, tutorial material, and new policy ideas regarding all forms of copyleft licensing. This site itself is licensed under a free and open license and has received contributions from experts around the world.",
+                    "answer_start": 0,
+                    "answer_end": "289",
+                    "answer_category": "0"
+                  }
+                ],
+                "is_impossible": "False"
+              },
+              {
+                "question": "read paragraph 2",
+                "id": "964410",
+                "answers": [
+                  {
+                    "answer_id": "373640",
+                    "document_id": "395703",
+                    "question_id": "349204",
+                    "text": "The primary project currently on this site is a tutorial book entitled [copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide]. This guide describes the policy motivations for copyleft, presents a detailed analysis of the text of various copyleft licenses, and gives examples and case studies of copyleft compliance situations.",
+                    "answer_start": 0,
+                    "answer_end": "353",
+                    "answer_category": "0"
+                  }
+                ],
+                "is_impossible": "False"
+              }
+            ],
+            "context": "copyleft     Toggle navigation                <svg width=245 height=50 style=margin: 5px><image xlink:href=/copyleftorg-green-stylized.svg src=/copyleftorg-green-stylized.png width=245 height=50></image></svg>       Wiki  Tutorial and Guide      What is copyleft?  Copyleft is a strategy of utilizing copyright law and licensing to pursue the policy goal of fostering and encouraging the equal and inalienable right to copy, share, modify and improve creative works of authorship.  Copyleft (as a general term) describes any method that utilizes the copyright system (in whole or in part) to achieve the aforementioned goal.  Copyleft as a concept is usually implemented in the details of a specific license, such as the  General Public License (GPL)  and  copyleft-next . Authors of creative works can unilaterally choose these licenses for their own works to build communities that collaboratively share and improve those copylefted creative works.  Copyleft licenses require that downstream recipients of the creative works receive the means and methods to usefully modify and improve those works of authorship.  For software copyleft licenses, users receive the \\u00e2\\u0080\\u009ccomplete, corresponding source\\u00e2\\u0080\\u009d code for the software \\u00e2\\u0080\\u0094 allowing those users to conveniently modify and reinstall that software.  What is copyleft.org?  copyleft.org is a collaborative project to create and disseminate useful information, tutorial material, and new policy ideas regarding all forms of copyleft licensing. This site itself is licensed under a free and open license and has received contributions from experts around the world.  The Copyleft Guide and Tutorial  The primary project currently on this site is a tutorial book entitled [ copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide ]. This guide describes the policy motivations for copyleft, presents a detailed analysis of the text of various copyleft licenses, and gives examples and case studies of copyleft compliance situations.  Getting Involved  There are various ways to get involved with this project.  The primary copyleft.org website is a wiki, and we welcome helpful edits and additions. For the aforementioned guide and tutorial about GPL and other copyleft concepts, we seek help in the following ways:  Proposing Improvements to the Guide  Pull requests on copyleft.org's Kallithea site  are most welcome. If you're looking for something to fix, just grep the *.tex files for FIXME and you'll find plenty.  Many of them are simple and easy to do.  Some of them are writing, and some of them are formatting-related.  Joining Mailing Lists   * Subscribe to our low-traffic  announcements-only mailing list .   * Join discussion on our  primary mailing list, called discuss .  Who Contributes to copyleft.org?  This site is a project of  Software Freedom Conservancy .  The editor-in-chief of the guide is  Bradley M. Kuhn .  You can see the Git  commit log on the tutorial  to see who has contributed to it, and see the list of users who contribute to this Wiki. Each contributors' work is their own, and thus the opinions expressed in their contributions, IRC utterances, commit messages mailing list posts, and/or other fora provided by copyleft.org may not necessarily reflect the views of the contributors' employers and/or organizations sponsoring the project and/or organizations republishing copyleft.org's materials.  Generally speaking, unless stated otherwise, please assume that individuals contribute to copyleft.org in their personal capacity.  URLs You Can Memorize!  copyleft.org has many easy-to-remember URLs.  These are convenience URLs that you can memorize and give to people verbally to point them to the right part of The Guide (https://copyleft.org/guide/).  (Since the guide is very large, we thought a few easy-to-remember ways to tell people where to look would be helpful.)  Here are the primary ones:   copyleft.org  points to this page.  copyleft.guide  points to the guide itself.  compliance.guide  points to the  GPL Compliance Guide  section of the full Guide.  gpl.guide  points to the  Detailed Analysis of the GNU GPL and Related Licenses  section of the full Guide.   As time goes on, we'll add convenience URLs to refer to specific parts of the guide, which makes it easy to refer people to portions of the Guide.  Here are the ones that exist so far:  *  compliance.guide/pristine  points to the pristine example, the chapter entitled  ThinkPenguin Wireless Router: Excellent CCS .  *  compliance.guide/offer-for-source  points to the section regarding using the offer for source provisions in GPLv3\\u00c2\\u00a76(c) and/or GPLv2\\u00c2\\u00a73(b).  Offsite Resources  The Wikipedia entry on copyleft  (The definition of copyleft at the top of this page is a modified version of the first paragraph of that Wikipedia entry).     /container       License:         CC-BY-SA-4.0    Privacy Policy  Edit Page  Page History  Prefs  Discussion  Recent Wiki Changes       '",
+            "document_id": 1297266
+          }
+        ]
+      }
+    ]
+  }
