@@ -1,13 +1,22 @@
 from flask import Flask
-import machinelearning as ml
+import requests
+from bs4 import BeautifulSoup
+
 
 app = Flask(__name__)
-    
+
+def scrap_web_page_title(webpage):
+    # Get the HTML from the page
+    resp = requests.get(webpage)
+    html = resp.text
+    soup = BeautifulSoup(html, 'lxml')
+    question = 'what is the title'
+    title = soup.find('title')
+    return title.text
+
 @app.route('/')
 def hello_world():
-    questions = "What is copyleft?"
-    context = "copyleft org"
-    text = ml.MachineLearning.run_machine_learning(context, questions)
+    text = scrap_web_page_title("https://copyleft.org/")
     return text
 
 
