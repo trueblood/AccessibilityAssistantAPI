@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 
 app = Flask(__name__)
+app.config['SECRET_KEY']="hard to guess string"
 
 def scrap_web_page_title(webpage):
     # Get the HTML from the page
