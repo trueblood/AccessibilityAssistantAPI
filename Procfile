@@ -1,1 +1,1 @@
-web: python vaccine_on_pincode.py   
+web: gunicorn --bind 0.0.0.0:$PORT flaskapp:app
