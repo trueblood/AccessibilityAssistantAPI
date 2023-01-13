@@ -17,8 +17,8 @@ def scrap_web_page_title(webpage):
 
 @app.route('/')
 def hello_world():
-    text = scrap_web_page_title("https://copyleft.org/")
-    return text
+    #text = scrap_web_page_title("https://copyleft.org/")
+    return "Hello World! "
 
 
 
