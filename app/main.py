@@ -17,6 +17,15 @@ def scrap_web_page_title(webpage):
     title = soup.find('title')
     return title.text
 
+
+
+def getFormattedURL(website):
+    inputArray = website.split()
+    url = "https://"
+    for i in range(len(inputArray)):
+        url += inputArray[i]
+    return url
+
 @app.route('/')
 def hello_world():
     sw.ScrapWebPage.scrap_web_page_title("https://copyleft.org/")
@@ -24,12 +33,25 @@ def hello_world():
     value = jh.JsonHelper.read_from_json_data()
     return value
 
-@app.route('/scrap/<website>', methods=['GET'])
-def question(website):
-    sw.ScrapWebPage.scrap_web_page_title("https://copyleft.org/")
-    #text = scrap_web_page_title("https://copyleft.org/")
+@app.route('/scraptitle/<website>', methods=['GET'])
+def scrapTitle(website):
+    inputArray = website.split()
+    url = "https://"
+    for i in range(len(inputArray)):
+        url += inputArray[i]
+    website = url
+    sw.ScrapWebPage.scrap_web_page_title(url)
     value = jh.JsonHelper.read_from_json_data()
     return value
 
+
+@app.route('/scrapsource/<website>', methods=['GET'])
+def scrapSource(website):
+    url = getFormattedURL(website)
+    value = sw.ScrapWebPage.scrap_web_page_source(url)
+    return value
+
+
 if __name__ == '__main__':
-    app.run(threaded=True, port=8001)
+  #  app.run(threaded=True, port=8001)
+    app.run()
