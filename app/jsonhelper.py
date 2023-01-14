@@ -48,7 +48,7 @@ class JsonHelper():
         data = json.load(f)
         value = ""
         for i in data:
-            value = i['cleaned']
+            value += i['cleaned']
         return value
 
     def get_json_byQuestion(question):
