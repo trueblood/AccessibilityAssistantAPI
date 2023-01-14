@@ -24,8 +24,12 @@ def hello_world():
     value = jh.JsonHelper.read_from_json_data()
     return value
 
-
-
+@app.route('/scrap/<website>', methods=['GET'])
+def question(website):
+    sw.ScrapWebPage.scrap_web_page_title("https://copyleft.org/")
+    #text = scrap_web_page_title("https://copyleft.org/")
+    value = jh.JsonHelper.read_from_json_data()
+    return value
 
 if __name__ == '__main__':
-    app.run(threaded=True, port=5000)
+    app.run(threaded=True, port=8001)
