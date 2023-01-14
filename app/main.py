@@ -51,7 +51,10 @@ def scrapSource(website):
 @app.route('/matcher/<question>', methods=['GET'])
 def matcher(question):
     value = m.Matcher.getResults(question, m.Matcher.getNaiveAnswer)
-    return value
+    values = value.values.tolist()
+    currentValue = values[0]
+    text = jh.JsonHelper.get_json_byQuestion(currentValue[0])
+    return text
 
 
 @app.route('/populatejson/<website>', methods=['GET'])
