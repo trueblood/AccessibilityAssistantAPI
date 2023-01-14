@@ -21,8 +21,8 @@ def scrap_web_page_title(webpage):
 def hello_world():
     sw.ScrapWebPage.scrap_web_page_title("https://copyleft.org/")
     #text = scrap_web_page_title("https://copyleft.org/")
-    #value = jh.JsonHelper.read_from_json_data()
-    return "hello world"
+    value = jh.JsonHelper.read_from_json_data()
+    return value
 
 
 
