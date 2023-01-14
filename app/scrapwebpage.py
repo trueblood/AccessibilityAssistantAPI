@@ -1,5 +1,5 @@
 import requests
-import app.jsonhelper as jh
+import app.databasehelper as db
 from bs4 import BeautifulSoup
 import uuid
 
@@ -14,7 +14,7 @@ class ScrapWebPage():
         id = 0
         for row in rows:
             question = 'read paragraph ' + str(id)
-            jh.JsonHelper.write_to_json(str(uuid.uuid4()), row, row.text, 'paragraph', question)
+            db.DatabaseHelper.writeToDatabase(str(uuid.uuid4()), webpage, row, row.text, 'paragraph', question)
             id += 1 
 
     def scrap_web_page_title(webpage):
@@ -24,7 +24,7 @@ class ScrapWebPage():
         soup = BeautifulSoup(html, 'lxml')
         question = 'what is the title'
         title = soup.find('title')
-        jh.JsonHelper.write_to_json(str(uuid.uuid4()), title, title.text, 'title', question)
+        db.DatabaseHelper.writeToDatabase(str(uuid.uuid4()), webpage, title, title.text, 'title', question)
 
     def scrap_web_page_header(webpage):
                # Get the HTML from the page
@@ -35,7 +35,7 @@ class ScrapWebPage():
         id = 0
         for row in rows:
             question = 'read header ' + str(id)
-            jh.JsonHelper.write_to_json(str(uuid.uuid4()), row, row.text, 'header', question)
+            db.DatabaseHelper.writeToDatabase(str(uuid.uuid4()), webpage, row, row.text, 'header', question)
             id += 1 
 
     def scrap_web_page_link(webpage):
@@ -47,7 +47,7 @@ class ScrapWebPage():
         id = 0
         for row in rows:
             question = 'read link ' + str(id)
-            jh.JsonHelper.write_to_json(str(uuid.uuid4()), row, row.text, 'link', question)
+            db.DatabaseHelper.writeToDatabase(str(uuid.uuid4()), webpage, row, row.text, 'link', question)
             id += 1 
 
     def scrap_web_page_source(webpage):
@@ -75,6 +75,6 @@ class ScrapWebPage():
                 output += '{} '.format(t)
         formatted = output.replace('"', '')
         formattedagain = formatted.replace("\n", "")
-        return formattedagain
+        db.DatabaseHelper.writeToDatabase(str(uuid.uuid4()), webpage, "0", formattedagain, 'source', question)
 
 

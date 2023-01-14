@@ -3,8 +3,10 @@ import requests
 import app.scrapwebpage as sw
 import app.jsonhelper as jh
 import app.matcher as m
+import app.databasehelper as db
 from bs4 import BeautifulSoup
 from flask import Flask
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY']="hard to guess string"
@@ -25,7 +27,7 @@ def getFormattedURL(website):
     url = "https://"
     for i in range(len(inputArray)):
         url += inputArray[i]
-    return url
+    return url.lower()
 
 @app.route('/')
 def hello_world():
@@ -38,12 +40,12 @@ def hello_world():
 def scrapTitle(website):
     url = getFormattedURL(website)
     sw.ScrapWebPage.scrap_web_page_title(url)
-    value = jh.JsonHelper.read_from_json_data()
-    return value
+    #value = jh.JsonHelper.read_from_json_data()
+    return "success"
 
 
 @app.route('/scrapsource/<website>', methods=['GET'])
-def scrapSource(website):
+def getSource(website):
     url = getFormattedURL(website)
     value = sw.ScrapWebPage.scrap_web_page_source(url)
     return value
@@ -57,37 +59,22 @@ def matcher(question):
     return text
 
 
-@app.route('/populatejson/<website>', methods=['GET'])
-def populateJson(website):
+@app.route('/populatedatabase/<website>', methods=['GET'])
+def populatedatabase(website):
     url = getFormattedURL(website)
     #sw.ScrapWebPage.scrap_web_page_title(url)
     #sw.ScrapWebPage.scrap_web_page_paragraph(url)
     #sw.ScrapWebPage.scrap_web_page_header(url)
     #sw.ScrapWebPage.scrap_web_page_link(url)
-    # Get the database using the method we defined in pymongo_test_insert file
-    from app.pymongo_get_database import get_database
-    dbname = get_database()
-    collection_name = dbname["user_1_items"]
-
-    item_1 = {
-    "_id" : "U1IT00001",
-    "item_name" : "Blender",
-    "max_discount" : "10%",
-    "batch_number" : "RR450020FRG",
-    "price" : 340,
-    "category" : "kitchen appliance"
-    }
-
-    item_2 = {
-    "_id" : "U1IT00002",
-    "item_name" : "Egg",
-    "category" : "food",
-    "quantity" : 12,
-    "price" : 36,
-    "item_description" : "brown country eggs"
-    }
-    collection_name.insert_many([item_1,item_2])
+    #sw.ScrapWebPage.scrap_web_page_source(url)
     return "success"
+
+
+@app.route('/getdatabyquestion/<website>/<question>', methods=['GET'])
+def getDataByQuestion(website, question):
+    url = getFormattedURL(website)
+    value = db.DatabaseHelper.findDataByQuestion(question, url)
+    return value
 
 if __name__ == '__main__':
   #  app.run(threaded=True, port=8001)
