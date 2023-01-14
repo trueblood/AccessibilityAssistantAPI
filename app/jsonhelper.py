@@ -46,7 +46,7 @@ class JsonHelper():
     def read_from_json_data():
         f = open('./data/data.json')
         data = json.load(f)
-        return data
+        return "hi"
 
     def get_json_byQuestion(question):
         path_to_file = "./data/data.json";
