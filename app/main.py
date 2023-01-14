@@ -2,6 +2,7 @@
 import requests
 import app.scrapwebpage as sw
 import app.jsonhelper as jh
+import app.matcher as m
 from bs4 import BeautifulSoup
 from flask import Flask
 
@@ -28,18 +29,14 @@ def getFormattedURL(website):
 
 @app.route('/')
 def hello_world():
-    sw.ScrapWebPage.scrap_web_page_title("https://copyleft.org/")
+    #sw.ScrapWebPage.scrap_web_page_title("https://copyleft.org/")
     #text = scrap_web_page_title("https://copyleft.org/")
-    value = jh.JsonHelper.read_from_json_data()
-    return value
+    #value = jh.JsonHelper.read_from_json_data()
+    return "status up"
 
 @app.route('/scraptitle/<website>', methods=['GET'])
 def scrapTitle(website):
-    inputArray = website.split()
-    url = "https://"
-    for i in range(len(inputArray)):
-        url += inputArray[i]
-    website = url
+    url = getFormattedURL(website)
     sw.ScrapWebPage.scrap_web_page_title(url)
     value = jh.JsonHelper.read_from_json_data()
     return value
@@ -51,6 +48,20 @@ def scrapSource(website):
     value = sw.ScrapWebPage.scrap_web_page_source(url)
     return value
 
+@app.route('/matcher/<question>', methods=['GET'])
+def matcher(question):
+    value = m.Matcher.getResults(question, m.Matcher.getNaiveAnswer)
+    return value
+
+
+@app.route('/populatejson/<website>', methods=['GET'])
+def populateJson(website):
+    url = getFormattedURL(website)
+    sw.ScrapWebPage.scrap_web_page_title(url)
+    sw.ScrapWebPage.scrap_web_page_paragraph(url)
+    sw.ScrapWebPage.scrap_web_page_header(url)
+    sw.ScrapWebPage.scrap_web_page_link(url)
+    return "success"
 
 if __name__ == '__main__':
   #  app.run(threaded=True, port=8001)
