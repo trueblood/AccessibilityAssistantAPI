@@ -1,3 +1,5 @@
+import json
+import app.jsonhelper as jh
 from app.pymongo_get_database import get_database
 dbname = get_database()
 collection_name = dbname["website_info"]
@@ -15,9 +17,16 @@ class DatabaseHelper():
             }   
         collection_name.insert_one(item)
 
-    def findDataByQuestion(question, website):
+    def findDataByQuestion_Cleaned(question, website):
         item_details = collection_name.find({"$and": [{"question": question}, {"website": website}]}).limit(1)
         value = ""
         for item in item_details:
-            value = item['cleaned']
+           value = item['cleaned']
+        return value
+    
+    def findDataByQuestion_Json(question, website):
+        item_details = collection_name.find({"$and": [{"question": question}, {"website": website}]}).limit(1)
+        value = ""
+        for item in item_details:
+           value = jh.JsonHelper.parse_json(item)
         return value

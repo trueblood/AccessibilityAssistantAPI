@@ -1,8 +1,6 @@
 
 import requests
 import app.scrapwebpage as sw
-import app.jsonhelper as jh
-import app.matcher as m
 import app.databasehelper as db
 from bs4 import BeautifulSoup
 from flask import Flask
@@ -10,17 +8,6 @@ from flask import Flask
 
 app = Flask(__name__)
 app.config['SECRET_KEY']="hard to guess string"
-
-def scrap_web_page_title(webpage):
-    # Get the HTML from the page
-    resp = requests.get(webpage)
-    html = resp.text
-    soup = BeautifulSoup(html, 'lxml')
-    question = 'what is the title'
-    title = soup.find('title')
-    return title.text
-
-
 
 def getFormattedURL(website):
     inputArray = website.split()
@@ -50,13 +37,6 @@ def getSource(website):
     value = sw.ScrapWebPage.scrap_web_page_source(url)
     return value
 
-@app.route('/matcher/<question>', methods=['GET'])
-def matcher(question):
-    value = m.Matcher.getResults(question, m.Matcher.getNaiveAnswer)
-    values = value.values.tolist()
-    currentValue = values[0]
-    text = jh.JsonHelper.get_json_byQuestion(currentValue[0])
-    return text
 
 
 @app.route('/populatedatabase/<website>', methods=['GET'])
@@ -70,11 +50,18 @@ def populatedatabase(website):
     return "success"
 
 
-@app.route('/getdatabyquestion/<website>/<question>', methods=['GET'])
-def getDataByQuestion(website, question):
+@app.route('/getdatabyquestioncleaned/<website>/<question>', methods=['GET'])
+def getDataByQuestionCleaned(website, question):
     url = getFormattedURL(website)
-    value = db.DatabaseHelper.findDataByQuestion(question, url)
+    value = db.DatabaseHelper.findDataByQuestion_Cleaned(question, url)
     return value
+
+@app.route('/getdatabyquestionjson/<website>/<question>', methods=['GET'])
+def getDataByQuestionJson(website, question):
+    url = getFormattedURL(website)
+    value = db.DatabaseHelper.findDataByQuestion_Json(question, url)
+    return value
+
 
 if __name__ == '__main__':
   #  app.run(threaded=True, port=8001)
